@@ -1,0 +1,20 @@
+{
+  "name": "proyectostanispablo",
+  "version": "1.0.0",
+  "description": "Proyecto de lenguaje de marcas 3a Evaluación presentado por Stanislav Kalynovskyi y Pablo Castro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stanis-Kalynovskyi/ProyectoStanisPablo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stanis-Kalynovskyi/ProyectoStanisPablo/issues"
+  },
+  "homepage": "https://github.com/Stanis-Kalynovskyi/ProyectoStanisPablo#readme"
+}
