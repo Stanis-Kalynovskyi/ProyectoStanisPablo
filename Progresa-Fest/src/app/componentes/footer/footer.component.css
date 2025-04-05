@@ -1,0 +1,33 @@
+.footer {
+    background-color: #a7c0bf;
+    color: #000000;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    }
+    
+    .social-icons {
+   
+    }
+    
+    .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    }
+    
+    .social-icons a:last-child {
+    margin-right: 0;
+    }
+    
+    .social-icons img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    }
+    
+    .copyright {
+    font-size: 0.9em;
+    margin: 0;
+    margin-left: auto; 
+    margin-right: auto; 
+    }
