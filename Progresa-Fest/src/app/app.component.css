@@ -1,19 +1,4 @@
-html, body {
-    height: 100%;
-    margin: 0;
-  }
-  
-  .content {
-    display: flex;
-    flex-direction: column;
-    min-height: calc(100vh - 56px - 50px); /* Ajusta según navbar y footer */
-  }
-  
-  .full-img {
-    flex-grow: 1;
-    width: 100%;
-    object-fit: cover; /* Ajusta la imagen sin distorsión */
-  }
+
   
   
   .footer {
@@ -50,7 +35,5 @@ html, body {
     margin-right: auto; /* Center the copyright */
     }
 
-    .nav-link-bold {
-        font-weight: bold;
-        }
+    
   
