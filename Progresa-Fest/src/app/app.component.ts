@@ -1,23 +1,14 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { FooterComponent } from "./componentes/footer/footer.component";
+import { NavbarComponent } from './componentes/navbar/navbar.component';
 
-import { ContactoComponent } from './contact/contact.component'; // Asegúrate de la ruta correcta
-
-const routes: Routes = [
-{
-path: '',
-
-children: [
-// Otras rutas de tu aplicación
-{ path: 'contacto', component: ContactoComponent }, // Ruta para tu componente de contacto
-{ path: '', redirectTo: '/', pathMatch: 'full' } // Ejemplo de ruta por defecto
-]
-},
-// Cualquier otra ruta de nivel superior que necesites
-];
-
-@NgModule({
-imports: [RouterModule.forRoot(routes)],
-exports: [RouterModule]
+@Component({
+selector: 'app-root',
+imports: [RouterOutlet, NavbarComponent, FooterComponent],
+templateUrl: './app.component.html',
+styleUrls: ['./app.component.css']
 })
-export class AppRoutingModule { }
+export class AppComponent {
+title = 'Progresa-Fest';
+}
