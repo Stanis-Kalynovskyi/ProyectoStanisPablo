@@ -1,0 +1,29 @@
+.contacto-container {
+    background-color: #2cccc9;
+    min-height: 100vh;
+  }
+  
+  .bg-lightblue {
+    background-color: #a4ffff;
+  }
+  
+  .text-container {
+    color: #000;
+  }
+  
+  .formulario-input {
+    border-radius: 2rem;
+    padding: 0.75rem 1rem;
+    border: none;
+  }
+  
+  textarea.formulario-input {
+    resize: none;
+  }
+  
+  button[type="submit"] {
+    border-radius: 2rem;
+    padding: 0.6rem;
+    font-weight: bold;
+  }
+  

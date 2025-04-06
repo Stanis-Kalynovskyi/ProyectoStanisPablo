@@ -1,11 +1,21 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-contact',
-  imports: [],
-  templateUrl: './contact.component.html',
-  styleUrl: './contact.component.css'
+selector: 'app-contacto',
+templateUrl: './contact.component.html',
+styleUrls: ['./contact.component.css']
 })
-export class ContactComponent {
+export class ContactoComponent {
+formData = {
+nombre: '',
+email: '',
+mensaje: ''
+};
 
+enviarFormulario() {
+console.log('Formulario enviado:', this.formData);
+alert('¡Mensaje enviado!');
+this.formData = { nombre: '', email: '', mensaje: '' };
+}
 }
