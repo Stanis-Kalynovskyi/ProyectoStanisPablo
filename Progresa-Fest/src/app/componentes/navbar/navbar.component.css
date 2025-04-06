@@ -1,26 +1,4 @@
-.bg-pink{
-    background-color: #e03d84;
-  }
-  .bg-green{
-    background-color: #4BE8DE;
-  }
-  .txt-pink{
-    color:#e03d84;
-    font-weight: bold;
-  }
-  .txt-green{
-    color: #4BE8DE;
-    font-weight: bold;
-  }
-  .activeButton{
-    border-bottom: 1px solid #e03d84;
-  }
-  .activeButtonInicio{
-    background-color: black;
-    border-bottom: 1px solid #e03d84;
-  }
-  
-  /* html, body {
+html, body {
     height: 100%;
     margin: 0;
   }
@@ -41,4 +19,3 @@
     font-weight: bold;
     }
 
-    */
