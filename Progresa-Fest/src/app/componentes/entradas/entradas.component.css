@@ -1,0 +1,81 @@
+/* Fondo de la página */
+:host {
+    display: block;
+    background-color: #36C9C6;
+    min-height: 80vh;
+    padding: 2rem;
+  }
+  
+  /* Tarjetas */
+  .card {
+    background-color: #a4f6f4; /* Más clarito que el fondo */
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease-in-out;
+    border-radius: 12px;
+  }
+  
+  .card:hover {
+    transform: scale(1.01);
+  }
+  
+  /* Título */
+  .card-title {
+    font-weight: bold;
+    color: #212529;
+  }
+  
+  /* Descripción */
+  .card-text {
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  /* Selector de cantidad */
+  select.form-select {
+    width: 100px;
+    background-color: #F4F1BB;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.3rem 0.5rem;
+  }
+  
+  /* Botón APLICAR */
+  button.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.2s ease;
+    border-radius: 8px;
+  }
+  
+  button.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+  }
+  
+  /* Resumen */
+  h5 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  .list-group-item {
+    background-color: #ffffff;
+    color: #212529;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Badge cantidad */
+  .badge {
+    background-color: #007bff;
+    font-size: 1rem;
+    padding: 0.5em 0.75em;
+  }
+  

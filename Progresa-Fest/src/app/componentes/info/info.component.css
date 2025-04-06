@@ -1,0 +1,71 @@
+/* Ocupa toda la altura de la pantalla */
+:host {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    background-color: #38c6c0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Contenedor del contenido */
+  .info-container {
+    flex: 1;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  /* Título */
+  h2 {
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Estilo para cada sección del acordeón */
+  .accordion-item {
+    background-color: #a4f6f4;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Título del acordeón */
+  .accordion-header {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #000;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  /* Contenido del acordeón */
+  .accordion-body {
+    background-color: #e0fafa;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    color: white;
+    padding: 1rem;
+  }
+  .content {
+    white-space: pre-line; /* Respeta los saltos de línea en el texto */
+  }
+  

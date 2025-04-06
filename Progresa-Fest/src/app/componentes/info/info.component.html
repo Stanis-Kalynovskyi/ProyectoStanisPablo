@@ -1,1 +1,14 @@
-<p>info works!</p>
+<div class="info-container">
+    <h2 class="text-center">INFO</h2>
+  
+    <div *ngFor="let section of sections; let i = index" class="accordion-item mb-2">
+      <button class="accordion-header" (click)="toggleSection(i)">
+        {{ section.title }}
+        <span class="float-end">+</span>
+      </button>
+      <div class="accordion-body" *ngIf="section.isOpen" [ngClass]="'content'">
+        {{ section.content }}
+      </div>
+    </div>
+  </div>
+  

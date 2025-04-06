@@ -1,1 +1,37 @@
-<p>entradas works!</p>
+<div class="container py-4">
+    <!-- Recorremos cada tipo de entrada -->
+    <div *ngFor="let ticket of tickets" class="card mb-3">
+      <div class="card-body d-flex justify-content-between align-items-center">
+        <!-- Icono + título + descripción -->
+        <div class="d-flex align-items-center">
+          <i class="bi bi-ticket-fill fs-1 text-primary me-3"></i>
+          <div>
+            <h5 class="card-title mb-1">{{ ticket.title }}</h5>
+            <p class="card-text mb-0">{{ ticket.description }}</p>
+          </div>
+        </div>
+  
+        <!-- Selector de cantidad -->
+        <div>
+          <select class="form-select" [(ngModel)]="ticket.quantity">
+            <option *ngFor="let num of quantityOptions" [value]="num">{{ num }}</option>
+          </select>
+        </div>
+      </div>
+    </div>
+ <!-- Botón aplicar -->
+<div class="text-end">
+    <button class="btn btn-danger px-4 py-2" (click)="apply()">APLICAR</button>
+  </div>
+  
+  <!-- Resumen visual -->
+  <div *ngIf="selectedTickets.length > 0" class="mt-4">
+    <h5>Resumen de Entradas Seleccionadas:</h5>
+    <ul class="list-group">
+      <li *ngFor="let ticket of selectedTickets" class="list-group-item d-flex justify-content-between align-items-center">
+        {{ ticket.title }}
+        <span class="badge bg-primary rounded-pill">{{ ticket.quantity }}</span>
+      </li>
+    </ul>
+  </div>
+  
