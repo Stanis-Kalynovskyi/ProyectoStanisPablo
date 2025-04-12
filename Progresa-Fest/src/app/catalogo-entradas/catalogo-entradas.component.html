@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-md-4" *ngFor="let entrada of entradas">
+      <div class="card">
+        <img [src]="'assets/images/' + entrada.imagen" class="card-img-top" alt="{{ entrada.nombre }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ entrada.nombre }}</h5>
+          <p class="card-text">{{ entrada.descripcion }}</p>
+          <p class="card-text"><strong>Precio: </strong>\${{ entrada.precio }}</p>
+          <a [routerLink]="['/entrada', entrada.id]" class="btn btn-primary">Ver más</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  

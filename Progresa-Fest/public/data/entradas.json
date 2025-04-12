@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "nombre": "Entrada 1",
+      "descripcion": "Descripción de la entrada 1",
+      "precio": 100,
+      "imagen": "entrada1.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Entrada 2",
+      "descripcion": "Descripción de la entrada 2",
+      "precio": 150,
+      "imagen": "entrada2.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Entrada 3",
+      "descripcion": "Descripción de la entrada 3",
+      "precio": 200,
+      "imagen": "entrada3.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Entrada 4",
+      "descripcion": "Descripción de la entrada 4",
+      "precio": 250,
+      "imagen": "entrada4.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Entrada 5",
+      "descripcion": "Descripción de la entrada 5",
+      "precio": 300,
+      "imagen": "entrada5.jpg"
+    }
+  ]
+  

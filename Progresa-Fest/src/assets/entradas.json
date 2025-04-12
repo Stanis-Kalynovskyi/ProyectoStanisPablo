@@ -1,0 +1,18 @@
+[
+    {
+      "title": "ABONO GENERAL",
+      "description": "Acceso normal al escenario.",
+      "quantity": 0
+    },
+    {
+      "title": "ABONO JOVEN",
+      "description": "Los jóvenes hasta 29 años pueden obtener un 20% de descuento para todo tipo de conciertos.",
+      "quantity": 0
+    },
+    {
+      "title": "ENTRADA VIP",
+      "description": "Acceso a escenario a primera fila con bebida incluida.",
+      "quantity": 0
+    }
+  ]
+  
