@@ -7,7 +7,7 @@ import { RegistroComponent } from './componentes/registro/registro.component';
 import { LoginComponent } from './componentes/login/login.component';
 
 export const routes: Routes = [
-  {path: '', redirectTo: '/inicio', pathMatch: 'full'},
+  { path: '', redirectTo: '/inicio', pathMatch: 'full' },
   { path: 'inicio', component: InicioComponent },
   { path: 'navbar', component: InicioComponent },
   { path: 'footer', component: InicioComponent },
@@ -16,4 +16,5 @@ export const routes: Routes = [
   { path: 'contacto', component: ContactoComponent },
   { path: 'registro', component: RegistroComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'carrito', loadComponent: () => import('./componentes/carrito/carrito.component').then(m => m.CarritoComponent) } // Nueva ruta para el carrito
 ];
