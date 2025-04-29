@@ -1,0 +1,32 @@
+<div class="d-flex flex-column min-vh-100">
+  <div class="container mt-5" style="max-width: 400px;"> <!-- Cambié mt-3 a mt-5 para más margen superior -->
+      <h4 class="mb-3 text-center">Iniciar Sesión</h4>
+      <form (ngSubmit)="login()" #loginForm="ngForm">
+          <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  [(ngModel)]="loginData.email"
+                  required
+              />
+          </div>
+
+          <div class="mb-3">
+              <label for="password" class="form-label">Contraseña</label>
+              <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                  [(ngModel)]="loginData.password"
+                  required
+              />
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100 mb-1">Iniciar Sesión</button>
+      </form>
+  </div>
+</div>
