@@ -1,38 +1,23 @@
+// filepath: f:\SATANIS\Codes\Html\ProyectoStanisPablo\Progresa-Fest\src\app\componentes\contacto\contacto.component.ts
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms'; // Importar FormsModule
 
 @Component({
   selector: 'app-contacto',
-  imports: [],
+  standalone: true,
+  imports: [FormsModule], // Incluir FormsModule aquí
   templateUrl: './contacto.component.html',
-  styleUrl: './contacto.component.css'
+  styleUrls: ['./contacto.component.css']
 })
 export class ContactoComponent {
+  formData = {
+    nombre: '',
+    correo: '',
+    mensaje: ''
+  };
 
+  enviarFormulario() {
+    console.log('Formulario enviado:', this.formData);
+    alert('¡Formulario enviado con éxito!');
+  }
 }
-
-/*
-
-<div class="container mt-4">
-  <h3>Contáctanos</h3>
-  <form (ngSubmit)="enviarFormulario()" #contactForm="ngForm">
-    <div class="mb-3">
-      <label for="nombre" class="form-label">Nombre</label>
-      <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="formData.nombre" required />
-    </div>
-
-    <div class="mb-3">
-      <label for="correo" class="form-label">Correo electrónico</label>
-      <input type="email" class="form-control" id="correo" name="correo" [(ngModel)]="formData.correo" required />
-    </div>
-
-    <div class="mb-3">
-      <label for="mensaje" class="form-label">Mensaje</label>
-      <textarea class="form-control" id="mensaje" name="mensaje" rows="4" [(ngModel)]="formData.mensaje" required></textarea>
-    </div>
-
-    <button type="submit" class="btn btn-primary">ENVIAR</button>
-  </form>
-</div>
-
-
-*/

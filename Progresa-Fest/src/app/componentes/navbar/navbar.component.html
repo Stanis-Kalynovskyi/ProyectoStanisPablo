@@ -1,47 +1,57 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <!-- Logo + texto -->
-    <a class="navbar-brand" routerLink="/inicio">
+    <a class="navbar-brand d-flex align-items-center" routerLink="/inicio">
       <img 
         src="assets/logo-search-grid-1x-Photoroom.png"  
         height="40"
-        class="d-inline-block align-top"
+        class="d-inline-block align-top me-2"
+        alt="Logo ProgresaFEST"
       >
       <span class="fw-bold">ProgresaFEST</span>
     </a>
 
- 
+    <!-- Botón hamburguesa -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="!isMenuCollapsed"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
     <!-- Contenido colapsable -->
-    <div class="collapse navbar-collapse" id="navbarContent">
+    <div class="collapse navbar-collapse" [class.show]="!isMenuCollapsed" id="navbarContent">
       <!-- Espacio flexible que empuja todo a la derecha -->
       <div class="flex-grow-1"></div>
 
-      <!-- Grupo de enlaces + icono (alineados juntos a la derecha) -->
-      <div class="d-flex align-items-center">
-        <!-- Enlaces pegados al icono -->
-        <ul class="navbar-nav me-3 mb-2 mb-lg-0">  <!-- me-3 para separar del icono -->
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/inicio" routerLinkActive="active">INICIO</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/entradas" routerLinkActive="active">ENTRADAS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/info" routerLinkActive="active">INFO</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" routerLink="/contacto" routerLinkActive="active">CONTACTO</a>
-            </li>
-        </ul>
- <!-- Icono de contacto (pegado al borde derecho) -->
-<div class="me-3">  <!-- me-3 para margen derecho -->
-  <a routerLink="/registro" routerLinkActive="active">
-    <img 
-      src="assets/icono contacto.png"  
-      height="24"
-      class="d-inline-block align-top"
-      alt="Icono de contacto"
-    >
-  </a>
-</div> </div> </div> </div> </nav>
+      <!-- Grupo de enlaces -->
+      <ul class="navbar-nav me-3 mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/inicio" routerLinkActive="active" (click)="closeMenu()">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/entradas" routerLinkActive="active" (click)="closeMenu()">ENTRADAS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/info" routerLinkActive="active" (click)="closeMenu()">INFO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contacto" routerLinkActive="active" (click)="closeMenu()">CONTACTO</a>
+        </li>
+      </ul>
+
+      <!-- Icono de contacto -->
+      <a routerLink="/registro" routerLinkActive="active" class="me-3" (click)="closeMenu()">
+        <img 
+          src="assets/icono contacto.png"  
+          height="24"
+          class="d-inline-block align-top"
+          alt="Icono de contacto"
+        >
+      </a>
+    </div>
+  </div>
+</nav>

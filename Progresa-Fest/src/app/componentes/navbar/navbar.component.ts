@@ -5,8 +5,16 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   selector: 'app-navbar',
   imports: [RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  styleUrls: ['./navbar.component.css'] // Corregí "styleUrl" a "styleUrls"
 })
 export class NavbarComponent {
+  isMenuCollapsed = true; // Controla el estado del menú hamburguesa
 
+  toggleMenu() {
+    this.isMenuCollapsed = !this.isMenuCollapsed; // Alterna el estado del menú
+  }
+
+  closeMenu() {
+    this.isMenuCollapsed = true; // Cierra el menú
+  }
 }
