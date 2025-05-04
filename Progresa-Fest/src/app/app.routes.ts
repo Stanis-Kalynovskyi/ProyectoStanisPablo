@@ -5,6 +5,7 @@ import { InfoComponent } from './componentes/info/info.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { LoginComponent } from './componentes/login/login.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },
@@ -16,5 +17,6 @@ export const routes: Routes = [
   { path: 'contacto', component: ContactoComponent },
   { path: 'registro', component: RegistroComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'carrito', loadComponent: () => import('./componentes/carrito/carrito.component').then(m => m.CarritoComponent) } // Nueva ruta para el carrito
+  { path: 'carrito', loadComponent: () => import('./componentes/carrito/carrito.component').then(m => m.CarritoComponent) }, // Nueva ruta para el carrito
+  { path: '**', component: PageNotFoundComponent } // Ruta de fallback
 ];

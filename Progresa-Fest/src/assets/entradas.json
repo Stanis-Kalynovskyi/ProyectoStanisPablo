@@ -13,6 +13,11 @@
       "title": "ENTRADA VIP",
       "description": "Acceso a escenario a primera fila con bebida incluida.",
       "quantity": 0
+    },
+    {
+      "title": "ENTRADA Stanis",
+      "description": "Esta entrada es de prueba para ver si funciona el JSON.",
+      "quantity": 0
     }
   ]
   
